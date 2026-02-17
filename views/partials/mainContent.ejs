@@ -1,0 +1,26 @@
+<main>
+    <% if (subPage) { %>
+        <h2>
+            <%= subPage.name %>
+        </h2>
+        <p>
+            <%= subPage.intro %>
+        </p>
+        <p><strong>What it is:</strong>
+            <%= subPage.whatItIs %>
+        </p>
+        <p><strong>Formation:</strong>
+            <%= subPage.formation %>
+        </p>
+        <p><strong>Characteristics:</strong>
+            <%= subPage.characteristics %>
+        </p>
+        <p><strong>Importance:</strong>
+            <%= subPage.importance %>
+        </p>
+        <p><strong>Observation:</strong>
+            <%= subPage.observation %>
+        </p>
+        <img src="<%= subPage.image %>" alt="<%= subPage.name %>">
+        <% } %>
+</main>

@@ -1,0 +1,13 @@
+<aside>
+    <h3>Exploration list</h3>
+    <ul>
+        <% mainData.items.forEach(item=> { %>
+            <li>
+                <a href="/<%= activePage %>/<%= item.name.toLowerCase().replace(/\s+/g, '-') %>"
+                    class="<%= subPage && subPage.name === item.name ? 'active' : '' %>">
+                    <%= item.name %>
+                </a>
+            </li>
+            <% }) %>
+    </ul>
+</aside>
