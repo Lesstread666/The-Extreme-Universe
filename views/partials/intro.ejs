@@ -1,28 +1,23 @@
-<% if (activePage==='home' ) { %>
-    <!-- Home page welcome -->
+<% if (activePage === 'home') { %>
     <section class="intro">
-        <h2>Welcome to the Extreme Universe</h2>
-        <p>The universe is a place of extremes. From objects with gravity so strong that not even light can escape, to
-            cosmic events that release more energy in seconds than our Sun will emit in its entire lifetime.
+        <h2 class="intro-title">Welcome to the Extreme Universe</h2>
+        <p class="intro-text">
+            The universe is a place of extremes. From objects with gravity so strong that not even light can escape,
+            to cosmic events that release more energy in seconds than our Sun will emit in its entire lifetime.
             <br><br>
-            This website is an educational guide to some of the most extreme phenomena in the universe. It explores how
-            these objects and events form, how they behave, and why they are important to our understanding of space.
+            This website is an educational guide to some of the most extreme phenomena in the universe.
+            It explores how these objects and events form, how they behave, and why they are important
+            to our understanding of space.
             <br><br>
-            Use the navigation to explore extreme cosmic objects or powerful astronomical events, and learn how they
-            shape the universe around us.
+            Use the navigation to explore extreme cosmic objects or powerful astronomical events.
         </p>
     </section>
 
-    <% } else if (mainData && !subPage) { %>
+<% } else if (mainData && !subPage) { %>
 
-        <!-- Main category intro -->
-        <section class="intro">
-            <h2>
-                <%= mainData.title %>
-            </h2>
-            <p>
-                <%= mainData.intro %>
-            </p>
-        </section>
+    <section class="intro">
+        <h2 class="intro-title"><%= mainData.title %></h2>
+        <p class="intro-text"><%= mainData.intro %></p>
+    </section>
 
-        <% } %>
+<% } %>

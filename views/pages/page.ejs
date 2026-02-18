@@ -5,16 +5,19 @@
     <body>
         <%- include('../partials/header') %>
 
-            <%- include('../partials/intro') %>
-
+            <div class="main-wrapper">
                 <% if (activePage !=='home' ) { %>
-                    <div class="page-content">
-                        <%- include('../partials/sidebar') %>
-                            <%- include('../partials/mainContent') %>
-                    </div>
-                    <% } %>
+                    <%- include('../partials/sidebar') %>
+                        <% } %>
 
-                        <%- include('../partials/footer') %>
+                            <%- include('../partials/intro') %>
+
+                                <% if (activePage !=='home' ) { %>
+                                    <%- include('../partials/mainContent') %>
+                                        <% } %>
+            </div>
+
+            <%- include('../partials/footer') %>
     </body>
 
 </html>

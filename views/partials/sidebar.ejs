@@ -1,16 +1,18 @@
 <% if (mainData && mainData.items ) { %>
     <aside class="sidebar">
-        <h3 class="sidebar-title">Exploration list</h3>
+        <div class="sidebar-inner">
+            <h3 class="sidebar-title">Exploration list</h3>
 
-        <ul class="sidebar-list">
-            <% mainData.items.forEach(item=> { %>
-                <li class="sidebar-item">
-                    <a href="/<%= activePage %>/<%= item.name.toLowerCase().replace(/\s+/g, '-') %>"
-                        class="sidebar-link <%= subPage && subPage.name === item.name ? 'active' : '' %>">
-                        <%= item.name %>
-                    </a>
-                </li>
-                <% }) %>
-        </ul>
+            <ul class="sidebar-list">
+                <% mainData.items.forEach(item=> { %>
+                    <li class="sidebar-item">
+                        <a href="/<%= activePage %>/<%= item.name.toLowerCase().replace(/\s+/g, '-') %>"
+                            class="sidebar-link <%= subPage && subPage.name === item.name ? 'active' : '' %>">
+                            <%= item.name %>
+                        </a>
+                    </li>
+                    <% }) %>
+            </ul>
+        </div>
     </aside>
     <% } %>

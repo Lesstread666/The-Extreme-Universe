@@ -1,26 +1,29 @@
-<main>
+<main class="main-content">
     <% if (subPage) { %>
-        <h2>
-            <%= subPage.name %>
-        </h2>
-        <p>
-            <%= subPage.intro %>
-        </p>
-        <p><strong>What it is:</strong>
-            <%= subPage.whatItIs %>
-        </p>
-        <p><strong>Formation:</strong>
-            <%= subPage.formation %>
-        </p>
-        <p><strong>Characteristics:</strong>
-            <%= subPage.characteristics %>
-        </p>
-        <p><strong>Importance:</strong>
-            <%= subPage.importance %>
-        </p>
-        <p><strong>Observation:</strong>
-            <%= subPage.observation %>
-        </p>
-        <img src="<%= subPage.image %>" alt="<%= subPage.name %>">
+        <section class="subpage-section ">
+            <h2 class="subpage-title">
+                <%= subPage.name %>
+            </h2>
+            <p class="subpage-text intro-text">
+                <%= subPage.intro %>
+            </p>
+            <p><strong>What it is:</strong>
+                <%= subPage.whatItIs %>
+            </p>
+            <p><strong>Formation:</strong>
+                <%= subPage.formation %>
+            </p>
+            <p><strong>Characteristics:</strong>
+                <%= subPage.characteristics %>
+            </p>
+            <p><strong>Importance:</strong>
+                <%= subPage.importance %>
+            </p>
+            <p><strong>Observation:</strong>
+                <%= subPage.observation %>
+            </p>
+            <img class="subpage-image" src="<%= subPage.image %>" alt="<%= subPage.name %>">
+        </section>
+
         <% } %>
 </main>
