@@ -1,8 +1,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>
         <%= pageTitle %>
     </title>
-    <link rel="stylesheet" href="/styles/style.css" >
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <% if (activePage !=='home' ) { %>
+        <script defer src="/js/toggleSidebar.js"></script>
+        <% } %>
 </head>

@@ -1,5 +1,4 @@
 import express from "express";
-import * as path from "path";
 import { extremeObjects, cosmicEvents } from "../data/data.js";
 
 const routerHome = express.Router();

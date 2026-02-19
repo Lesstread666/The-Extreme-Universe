@@ -1,10 +1,8 @@
 import express from "express";
-import * as path from "path";
 import { extremeObjects } from "../data/data.js";
 import { normalizeName } from "../scripts/normalizeName.js";
 
-const routerExtremeObjects = express.Router();
-const __dirname = path.resolve();
+const routerExtremeObjects = express.Router();  
 
 /* Main Page: /extreme-objects */
 routerExtremeObjects.get("/", (req, res) => {

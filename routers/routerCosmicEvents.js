@@ -1,10 +1,8 @@
 import express from "express";
-import * as path from "path";
 import { cosmicEvents } from "../data/data.js";
 import { normalizeName } from "../scripts/normalizeName.js";
 
 const routerCosmicEvents = express.Router();
-const __dirname = path.resolve();
 
 /* Main Page: /extreme-objects */
 routerCosmicEvents.get("/", (req, res) => {
